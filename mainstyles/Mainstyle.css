@@ -1,0 +1,99 @@
+body
+{
+font-family: Arial, sans-serif;
+font-Size: 100%;
+padding: 1em;
+background-color: #263938;
+}
+header 
+{
+    background-color:#B2B2B2;;
+    padding: 10px;
+    width: 100%;
+    
+}
+h1
+{
+    font-size: 300%;
+    color: #FDE497;
+}
+main
+{
+    text-align: center;
+}
+
+nav
+{
+    text-align: center;
+    font-size: 1.2em;
+    padding: 1%;
+}
+nav ul
+{
+    text-align:center;
+    Font-size: 1.2em;
+}
+nav ul li
+{
+    list-style-type: none;
+    background-color: #B2B2B2;
+    display: inline;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 100px;
+    border: 2px;
+}
+nav ul li:hover
+{
+    background-color: darkgray;
+}
+nav ul li a
+{
+    color: #263938;
+    text-decoration: none;
+}
+footer
+{
+    padding: 10px;
+    background-color: #B2B2B2;
+    align-content: center;
+    color:#FDE497;
+    text-align: center;
+    width: 100%;
+}
+#active
+{
+background-color:  darkgray;
+}
+p
+{
+    font-family: Arial, sans-serif;
+    font-Size: 150%;
+    color:#FDE497;
+    text-align: center;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  min-width: 500px;
+  box-shadow: 100% 100% 100% 100% rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+}
+
+.desc {
+  padding: 10px;
+  text-align: center;
+}
