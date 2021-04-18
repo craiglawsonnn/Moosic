@@ -2,31 +2,24 @@ body
 {
 font-family: Arial, sans-serif;
 font-Size: 100%;
-padding: 1em;
 background-color: #263938;
+margin: 0;
+color: #FDE497;
 }
 header 
 {
-    background-color:#B2B2B2;;
-    padding: 10px;
+    background-color:#B2B2B2;
     width: 100%;
-    
+    position:fixed;
+    height: fit-content;
 }
 h1
 {
     font-size: 300%;
-    color: #FDE497;
 }
 main
 {
-    text-align: center;
-}
-
-nav
-{
-    text-align: center;
-    font-size: 1.2em;
-    padding: 1%;
+    padding-top: 90px;
 }
 nav ul
 {
@@ -35,15 +28,14 @@ nav ul
 }
 nav ul li
 {
-    list-style-type: none;
     background-color: #B2B2B2;
     display: inline;
     padding-right: 3%;
     padding-left: 3%;
     padding-top: 2%;
     padding-bottom: 2%;
-    margin: 100px;
     border: 2px;
+    border-radius: 10px;
 }
 nav ul li:hover
 {
@@ -56,12 +48,12 @@ nav ul li a
 }
 footer
 {
-    padding: 10px;
     background-color: #B2B2B2;
-    align-content: center;
-    color:#FDE497;
     text-align: center;
     width: 100%;
+    position: fixed;
+    bottom:0;
+    font-size: 80%;
 }
 #active
 {
@@ -70,30 +62,70 @@ background-color:  darkgray;
 p
 {
     font-family: Arial, sans-serif;
-    font-Size: 150%;
-    color:#FDE497;
+    font-Size: 125%;
+    
+}
+
+section
+{
+    padding-top: 10px;
+}
+aside 
+{
+    width: 28%;
+    font-style: italic;
+    color: #a51b1b;
+    height:300px;
+    word-break: break-word;
+    float:right;
+    padding-left: 10px;
+}
+
+aside, p
+{
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+.artistLink, .tablePad
+{
+    padding-top: 10px;
+}
+
+.artistLink
+{
+    padding-bottom:1%;
+    margin:0;
+}
+
+.artistPar
+{
+    padding-bottom: 30px;
+    font-size: 125%;
+}
+h2, .artistPar, .artistLink, .tablePad
+{
+    text-shadow: 2px 2px 4px  black;
+}
+h2, h1
+{
+    padding-left: 80px;
     text-align: center;
 }
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content 
+.artistSection
 {
-  display: none;
-  position: absolute;
-  min-width: 500px;
-  box-shadow: 100% 100% 100% 100% rgba(0,0,0,0.2);
-  z-index: 100;
+    height:90%;
+    padding-bottom: 20px;
 }
-
-.dropdown:hover .dropdown-content 
+.bottomnav
 {
-  display: block;
+padding-right: 5%;
+padding-left: 5%;
+color: #FDE497;    
+text-decoration: none;
 }
-
-.desc {
-  padding: 10px;
-  text-align: center;
+.bottomnav li
+{
+    list-style-type: none;
+    display: inline;
 }
