@@ -1,14 +1,65 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8"> <!--- 8 bit character encoding capable of encoding all possible characters ---->
     <meta name="description" content="Moosic | Your new homepage for everything music">
-    <meta name="keywords" content="Music, Fashion, Spotify, Style, Moosic">
+    <meta name="keywords" content="Music, Fashion, Spotify, Style, Moosic, Youtube, Artists">
     <title>Moosic</title>
     <link rel="stylesheet" type="text/css" href="mainstyles/Mainstyle.css"/> <!-- Link to external css mainstyle file-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <style>
+        body
+        {
+            background: url("images/Background.jpg");
+        }
+        .slider
+        {
+            
+            width: 800px;
+            height: 400px;
+            background: url(images/jackperforming.jpg);
+            background-size: contain; 
+            background-repeat: no-repeat; 
+            margin: 3% auto;
+            animation: slide 20s infinite;
+        }
+        @keyframes slide
+        {
+            25%
+            {
+            background: url(images/mitskiperforming.jpg);
+            background-size: contain; 
+            background-repeat: no-repeat; 
+            }
+            50%
+            {
+            background: url(images/jojiperforming.jpg);   
+            background-size: contain;  
+            background-repeat: no-repeat;
+            }
+            75%
+            {
+            background: url(https://www.rollingstone.com/wp-content/uploads/2019/11/billie-eilish.jpg?resize=1800,1200&w=1800);  
+            background-size: contain;  
+            background-repeat: no-repeat; 
+            }
+            100%
+            {
+            background: url(images/jackperforming.jpg);
+            background-size: contain;   
+            background-repeat: no-repeat;
+            }
+        }
+        ol li
+        {
+            list-style-type: none;
+            display: inline;
+        }
+    </style>
 </head> 
     <body>
         <header>
-        <img id="logo" style="float:left; height: 90px; width: 90px;" src="images/output-onlinepngtools.png" alt="logo" width="110">
+        <img style="float:left; height: 90px; width: 90px;" src="images/output-onlinepngtools.png" alt="logo" width="110">
             <nav>
             <!--- Navigation menu-->
                 <ul>
@@ -21,12 +72,23 @@
         </header>
         <main>
         <h1>Welcome to Moosic</h1>
-        <p>
+        <p style="padding:  30px;">
            This website will be used as a homepage to showcase upcoming and popular music artist, giving a general background on them, a link to their Spotify where you can listen to them with links to copy their clothing style.
         </p>
+        <h2>Some of this weeks highlighted artist's performing</h2>
+        <section class="slider">
+        </section>
         </main>
         <footer>
-        <p id="copyright" class=>&copy;Copyright 2012</p>
+            <nav>
+                <ol>
+                    <li><a href="index.html" class="bottomnav"> HOME</a></li>
+                    <li><a href="artists.html" class="bottomnav">ARTIST</a></li>
+                    <li><a href="styles.html" class="bottomnav">STYLES</a></li>
+                    <li><a href="aboutus.html" class="bottomnav">ABOUT US</a></li>
+                </ol>
+            </nav>
+        <p id="copyright">&copy;Copyright 2021</p>
         </footer>
     </body>
 </html>

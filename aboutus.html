@@ -1,15 +1,79 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8"> <!--- 8 bit character encoding capable of encoding all possible characters ---->
     <meta name="description" content="Moosic | Your new homepage for everything music">
-    <meta name="keywords" content="Music, Fashion, Spotify, Style, Moosic">
+    <meta name="keywords" content="Music, About Us, Google maps, Moosic, Contact us, Feedback, Our mission">
     <title>Moosic</title>
     <link rel="stylesheet" type="text/css" href="mainstyles/Mainstyle.css"/> <!-- Link to external css mainstyle file-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <style>    
+        body
+            {
+            background-image: url("images/Background.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            }
+        iframe
+            {
+            float: left;
+            }
+        .aboutus
+            {
+            padding-left: 40%;
+            padding-bottom: 12%;
+            text-shadow: 2px 2px 4px black;
+            }
+        .required
+            {
+            font-weight: bold;
+            color: red;
+            }
+        input
+            {
+            margin-left: 1em;
+            margin-bottom: .5em;
+            width: 220px;
+            }
+        input[type="radio"] {width: 10px;}
+        input[type="checkbox"] {width: 15px;}
+        #button
+            {
+            margin-left: 90px;
+            }
+        #button, #reset
+            {
+            margin-top: .5em;
+            width: 8em;
+            background-color:#FDE497;
+            border: 2px; 
+            color: black;
+            }
+        fieldset
+            {
+            display: inline-block;
+            }
+        form
+            {
+            text-align:center;
+            padding-left: 30px;
+            padding-bottom: 5%;
+            }
+        .required
+            {
+            color: red;
+            }
+        ol li
+            {
+            list-style-type: none;
+            display: inline;
+            }
+    </style>
 </head> 
     <body>
         <header>
-        <img id="logo" style="float:left; height: 90px; width: 90px;" src="images/output-onlinepngtools.png" alt="logo" width="110">
-            <nav>
+        <img style="float:left; height: 90px; width: 90px;" src="images/output-onlinepngtools.png" alt="logo" width="110">
+            <nav class="headernav">
             <!--- Navigation menu-->
                 <ul>
                     <li> <a href="index.html"> HOME</a></li>
@@ -19,12 +83,56 @@
                 </ul>
             </nav>
         </header>
+        <main>
         <h2 style="color:#FDE497">ABOUT US</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18888.829997971156!2d-6.361944503451083!3d53.71641412039111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48673a26c005dd1d%3A0x6cc94a941a3afc93!2sDrogheda%2C%20Co.%20Louth!5e0!3m2!1sen!2sie!4v1616149835323!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <p style="float: top">This text will include certain detail about our mission and our idea behind this website and possible contact details.</p>
-        
+        <section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18888.829997971156!2d-6.361944503451083!3d53.71641412039111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48673a26c005dd1d%3A0x6cc94a941a3afc93!2sDrogheda%2C%20Co.%20Louth!5e0!3m2!1sen!2sie!4v1616149835323!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+        <p class="aboutus">Our main goal with this website is to highlight upcoming artists or to give a more in depth view into artists which are currently popular. <br><br>We give links to each artists Youtube and Spotify. 
+            <br><br>We also have a styles page which outlines some of these artists most popular outfits and styles and gives links to the clothes or something very similar allowing you to copy their styles.
+            <br><br>Below is an area in which you can give your details to keep updated with our website as well as leave feedback on our website so we can improve!
+        </p>
+        </section>
+        <section><h3 style="text-align: center;">Please consider filling out this form to help us improve our website</h3>
+        <form action="http://foo.com" method="get">
+            <label for="first_name">First name: <span class="required">*</span></label>
+            <input type="text" name="first_name" id="first_name" autofocus required placeholder="John"><br>
+            <label for="last_name">Last name: <span class="required">*</span></label>
+            <input type="text" name="last_name" id="last_name" required placeholder="Doe"><br>
+            <label for="email">Email: <span class="required">*</span></label>
+            <input type="email" name="email" id="email" required placeholder="AlexJones@infowars.com"><br>
+            
+            <label for="gender">Gender :</label>
+            <input type="radio" id="gender" name="gender" value="male"> Male
+            <input type="radio" id="gender" name="gender" value="male"> Female
+            <input type="radio" id="gender" name="gender" value="male"> Other <br>
+            
+            <label for="internet"> Heard of us:</label>
+            <fieldset>
+            <input type="checkbox" id="internet" name="internet" value="internet" checked> Internet <br>
+            <input type="checkbox" class="marginl" id="internet" name="paper" value="paper"> Newspaper <br>
+            <input type="checkbox" class="marginl" id="internet" name="friend" value="friend"> Friend <br>
+            <input type="checkbox" class="marginl" id="internet" name="Add" value="Add"> Others <br>
+            </fieldset>
+            <br>
+            <label for="message">Query: </label>
+            
+            <textarea cols="40" rows="6" id="message" name="message" placeholder="Your message must be less than 200 characters" data-maxlength="200"></textarea><br>
+            <input type="submit" name="submit" id="button" value="Submit">
+            <input type="reset" name="reset" id="reset">
+            <p><span class="required">*</span><em>Indicates a required field</em></p>
+            </form>
+        </section>
+        </main>
         <footer>
-        <p id="copyright" class=>&copy;Copyright 2012</p>
+            <nav>
+                <ol>
+                    <li><a href="index.html" class="bottomnav"> HOME</a></li>
+                    <li><a href="artists.html" class="bottomnav">ARTIST</a></li>
+                    <li><a href="styles.html" class="bottomnav">STYLES</a></li>
+                    <li><a href="aboutus.html" class="bottomnav">ABOUT US</a></li>
+                </ol>
+            </nav>
+        <p id="copyright">&copy;Copyright 2021</p>           
         </footer>
     </body>
 </html>

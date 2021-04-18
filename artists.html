@@ -1,14 +1,51 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8"> <!--- 8 bit character encoding capable of encoding all possible characters ---->
     <meta name="description" content="Moosic | Your new homepage for everything music">
-    <meta name="keywords" content="Music, Fashion, Spotify, Style, Moosic">
+    <meta name="keywords" content="Music, Spotify, Style, Moosic, Artists, Youtube, Songs">
     <title>Moosic</title>
     <link rel="stylesheet" type="text/css" href="mainstyles/Mainstyle.css"/> <!-- Link to external css mainstyle file-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <style>
+        table,th, td
+        {
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .tablePad
+        {
+        margin-bottom: 1%;
+        }
+        .artistLink
+        {
+            text-align: justify;
+        }
+        .portrait
+        {
+        border-radius: 40%;
+        float: left;
+        margin: 10px;
+        margin-bottom:10%;
+        }
+        iframe
+        {
+            border: 0;
+        }
+        ol li
+        {
+            list-style-type: none;
+            display: inline;
+        }   
+    </style>
 </head> 
     <body>
         <header>
-        <img id="logo" style="float:left; height: 90px; width: 90px;" src="images/output-onlinepngtools.png" alt="logo" width="110">
+        <img style="float:left; height: 90px; width: 90px;" src="images/output-onlinepngtools.png" alt="logo" width="110">
             <nav>
             <!--- Navigation menu-->
                 <ul>
@@ -19,10 +56,86 @@
                 </ul>
             </nav>
             </header>
-            
-        
-        <footer>
-        <p id="copyright" class=>&copy;Copyright 2012</p>
-        </footer>
+            <main>
+                <section style="background-image: url('images/mitski_background.jpg'); width: 100%; height: 500px;">
+                <h2>Mitski</h2>
+                <img src="images/mitski_face.jpg" alt="Mitski" width="200" height="200"  class= "portrait">
+                <aside><iframe src="https://open.spotify.com/embed/artist/2uYWxilOVlUdk4oV9DvwqK" width="350" height="80" allow="encrypted-media"></iframe><br>
+                    <iframe src="https://www.youtube.com/embed/ohxu-pA7o64" width ="350" height = "200" ></iframe></aside>
+                    <br>
+                <article style= "text-align: left;" class="artistPar">Mitsuki Frances Laycock, known professionally as Mitski, was born on September 27, 1990 in the Mie prefecture of Japan. Mitski was eighteen when she wrote her first song. 
+                    Mitski's family settled in Turkey for some of the time she was in high school though she did not complete her senior year, explaining in an interview that “I realized I had all the credits needed to graduate...
+                    I went to the principal’s office and just asked for my degree. So I graduated early.” When she was around 16 and living in Japan, she was working with a pop idol manager who gave her songs geared towards creating a cute, J-pop image.</article>
+                    
+                    <ul style="list-style: none;" class="artistLink">
+                        <li>Some of Mitski's most popular songs</li>
+                        <li><a href="https://youtu.be/-wuU_3GmGWs" style = "color: #FDE497;" target="_blank">Abbey</a> (2015)</li>
+                        <li><a href="https://youtu.be/EJ0O2vDT0VE" style = "color: #FDE497;" target="_blank">Happy</a> (2016)</li>
+                      </ul>  
+                    <table class="tablePad">
+                            <caption>Yearly listeners</caption>
+                            <thead><tr><th>2019 Listeners</th><th>2020 Listeners</th><th> Predicted 2021 Listeners</th></tr></thead>
+                        <tbody>
+                            <tr><td>500 Thousand</td>  <td>1 Million</td>    <td>2+ Million</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section style="background-image: url('images/joji_background.jpg'); width: 100%; height: 500px;  color: #FDE497">
+                    <h2>Joji</h2>
+                    <img src="images/joji.jpg" alt="Joji" width="200" height="200" class="portrait">
+                    <aside><iframe src="https://open.spotify.com/embed/artist/3MZsBdqDrRTJihTHQrO6Dq" width="350" height="80" allow="encrypted-media"></iframe>
+                    <iframe src="https://www.youtube.com/embed/jPan651rVMs" width="350" height="200" ></iframe></aside>
+                    <article style="text-align:left;" class="artistPar">George Kusunoki Miller(born 18 September 1992), 
+                        better known by his stage name Joji and formerly by his online aliases Filthy Frank and Pink Guy,
+                         is a Japanese singer-songwriter, record producer, author, comedian, and a former Internet personality and YouTuber. Aside from the comedic and often rap-based music he created under the Pink Guy alias, 
+                         Miller also created more serious and traditional music under another stage name, Joji, which became his primary focus in late 2017. Speaking on his transition from his YouTube career to his music career as Joji, Miller said to Billboard "now I get to do stuff that I want to hear."
+                         In the article by Billboard, he specified that 'Joji' isn't a character like Filthy Frank and Pink Guy. "I guess that's the difference," he continues. "Joji's just me."</article>
+                         <ul style="list-style:none;" class="artistLink">
+                         <li>Some of Joji's most popular songs</li>
+                         <li><a href="https://youtu.be/K09_5IsgGe8" target="_blank" style = "color: #FDE497;">Run</a> (2020)</li>
+                         <li><a href="https://youtu.be/K3Qzzggn--s" target="_blank" style = "color: #FDE497;">Slow Dancing in the Dark</a> (2018)</li>
+                        </ul>
+                        <table class="tablePad">
+                            <caption>Yearly listeners</caption>
+                            <thead><tr><th>2019 Listeners</th><th>2020 Listeners</th><th> Predicted 2021 Listeners</th></tr></thead>
+                        <tbody>
+                            <tr><td>5 Million</td>  <td>10 Million</td>    <td>15+ Million</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section style="background-image: url('images/jackstauber_background.jpg'); width: 100%; height: 500px; padding-bottom: 100px;">
+                    <h2>Jack Stauber</h2>
+                    <img src="images/jackstauber_face.jpg" alt="Jack Stauber" width="200" height="200" class="portrait">
+                    <aside><iframe src="https://open.spotify.com/embed/artist/1vVHevk2PD45epYnDi9CCc" width="350" height="80" allow="encrypted-media"></iframe>
+                        <iframe width="350" height="200" src="https://www.youtube.com/embed/gYYrNE_pLaE"></iframe></aside>
+                        <div class="artistOpacity">
+                        <article style="text-align: left;" class="artistPar">Jack Stauber  is an American independent singer and songwriter from Erie, Pennsylvania, born on April 6th, 1996, and is 25 years old. Jack Stauber's current music style is known for being very strange and complex, but it is mainly 
+                            a indie pop-synth like, electronic, alternative, and avant-garde style with a unique blend of different other genres in it, like rock, lo-fi, and folk. Jack is also known for having a very strange and stretchy singing voice.</article>
+                        </div>
+                            <ul style="list-style:none;" class="artistLink">
+                                <li>Some of Jack Stauber's most popular songs</li>
+                                <li><a href="https://youtu.be/eYDI8b5Nn5s" target="_blank" style = "color: #FDE497;">Buttercup</a> (2018)</li>
+                                <li><a href="https://youtu.be/-ZTdb5zCzuI" target="_blank" style = "color: #FDE497;">Dead Weight</a> (2018)</li>
+                               </ul>
+                            <table class="tablePad">
+                                <caption>Yearly listeners</caption>
+                                <thead><tr><th>2019 Listeners</th><th>2020 Listeners</th><th> Predicted 2021 Listeners</th></tr></thead>
+                            <tbody>
+                                <tr><td>30 Thousand</td>  <td>500 Thousand</td>    <td>1+ Million</td></tr>
+                            </tbody>
+                        </table>
+                </section>
+            </main>
+    <footer>
+        <nav>
+            <ol>
+                <li><a href="index.html" class="bottomnav"> HOME</a></li>
+                <li><a href="artists.html" class="bottomnav">ARTIST</a></li>
+                <li><a href="styles.html" class="bottomnav">STYLES</a></li>
+                <li><a href="aboutus.html" class="bottomnav">ABOUT US</a></li>
+            </ol>
+        </nav>
+    <p id="copyright">&copy;Copyright 2021</p>
+    </footer>
     </body>
 </html>
